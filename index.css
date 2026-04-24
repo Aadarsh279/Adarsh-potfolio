@@ -289,13 +289,17 @@ nav.scrolled {
 
 /* Hero Section */
 .hero-section {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 4rem;
+    text-align: center;
+    gap: 2rem;
 }
 
 .hero-content {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .badge {
@@ -333,76 +337,19 @@ nav.scrolled {
 .description {
     color: var(--text-secondary);
     font-size: 1.1rem;
-    max-width: 450px;
-    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
 }
 
 .hero-cta {
     display: flex;
+    justify-content: center;
     gap: 1rem;
 }
 
-.hero-visual {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
 
-.profile-card {
-    padding: 2.5rem;
-    width: 100%;
-    max-width: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    transform: rotate(3deg);
-    transition: var(--transition-slow);
-}
 
-.profile-card:hover {
-    transform: rotate(0) translateY(-10px);
-}
 
-.profile-icon {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(139,92,246,0.2));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-    color: var(--text-primary);
-    border: 1px solid rgba(255,255,255,0.1);
-}
-
-.profile-stats {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 1.5rem;
-}
-
-.stat {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.stat-num {
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: var(--font-heading);
-}
-
-.stat-label {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-}
 
 /* About Section */
 .about-content {
